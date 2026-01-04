@@ -5,11 +5,11 @@ import heroPlants from "@/assets/hero-plants.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden leaf-pattern">
+    <section className="relative min-h-screen flex items-center leaf-pattern overflow-hidden">
       {/* Background Gradient Orbs */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-40 -right-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 -left-20 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-secondary rounded-full blur-3xl" />
       </div>
 
