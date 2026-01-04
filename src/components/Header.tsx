@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, MapPin, Leaf } from "lucide-react";
+import { Menu, X, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,16 +38,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <Leaf className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="font-display text-lg font-semibold text-foreground">
-                Oxygen Forest
-              </h1>
-              <p className="text-xs text-muted-foreground -mt-1">Gift Plants</p>
-            </div>
+          <a href="#" className="flex items-center">
+            <img 
+              src={logo} 
+              alt="Oxygen Forest - Nursery Chain Store" 
+              className="h-12 sm:h-14 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}

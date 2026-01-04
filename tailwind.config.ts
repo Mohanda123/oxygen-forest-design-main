@@ -59,6 +59,10 @@ export default {
           DEFAULT: "hsl(var(--terracotta))",
           foreground: "hsl(var(--terracotta-foreground))",
         },
+         leaf: {
+          DEFAULT: "hsl(var(--leaf))",
+          foreground: "hsl(var(--leaf-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
